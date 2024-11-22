@@ -1,0 +1,126 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('images/fondo.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: white; 
+}
+
+
+.container {
+    text-align: center;
+}
+
+
+.open-btn {
+    font-size: 18px;
+    padding: 15px 30px;
+    background-color: #5bc0de;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.open-btn:hover {
+    box-shadow: 0 0 10px #5bc0de, 0 0 20px #5bc0de;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+
+.modal-content {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5), 0 0 30px rgba(0, 255, 255, 0.7);
+    border: 2px solid rgba(0, 255, 255, 0.8);
+    animation: neon-border 1.5s infinite alternate;
+    max-width: 600px;
+    text-align: center;
+}
+
+
+@keyframes neon-border {
+    from {
+        box-shadow: 0 0 10px rgba(0, 255, 255, 0.5), 0 0 20px rgba(0, 255, 255, 0.7);
+    }
+    to {
+        box-shadow: 0 0 20px rgba(0, 255, 255, 0.8), 0 0 40px rgba(0, 255, 255, 1);
+    }
+}
+
+
+.close-btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.close-btn:hover {
+    box-shadow: 0 0 10px #d9534f, 0 0 20px #d9534f;
+}
+
+
+.modal-content h1 {
+    color: #0ff;
+    font-size: 36px;
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff;
+    margin-bottom: 20px;
+    animation: neon-title 1.5s infinite alternate;
+}
+
+
+@keyframes neon-title {
+    from {
+        text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff;
+    }
+    to {
+        text-shadow: 0 0 20px #0ff, 0 0 30px #0ff, 0 0 50px #0ff;
+    }
+}
+
+
+.btn {
+    font-size: 18px;
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.piedra {
+    background-color: #f0ad4e;
+}
+
+.papel {
+    background-color: #5bc0de;
+}
+
+.tijera {
+    background-color: #d9534f;
+}
+

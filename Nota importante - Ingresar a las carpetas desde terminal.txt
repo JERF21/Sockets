@@ -1,0 +1,6 @@
+Para el funcionamiento de cada cosa, se debe ingresar directamente a su carpeta principal en la consola
+
+Iniciar
+
+ChatConNotificaciones: npm run dev
+JuegoPiedraPapelTijera: node server.js

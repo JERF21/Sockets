@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijera</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <button id="openGame" class="open-btn">Jugar</button>
+    </div>
+    <div id="gameModal" class="modal">
+        <div class="modal-content">
+            <button id="closeGame" class="close-btn">Cerrar</button>
+            <h1>¡Piedra, Papel o Tijera!</h1>
+            <div class="options">
+                <button class="btn piedra" onclick="play('piedra')">Piedra</button>
+                <button class="btn papel" onclick="play('papel')">Papel</button>
+                <button class="btn tijera" onclick="play('tijera')">Tijera</button>
+            </div>
+            <div id="result" class="result">Esperando tu jugada...</div>
+            <div id="history" class="history">
+                <h2>Historial de partidas:</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

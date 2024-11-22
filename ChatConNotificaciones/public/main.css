@@ -1,0 +1,113 @@
+body {
+    font-family: "Nunito", sans-serif;
+    background-color: #f4f4f9; 
+    color: #333; 
+    margin: 0;
+    padding: 0;
+}
+
+#chat-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+}
+
+#chat-window {
+    padding: 20px;
+    background-color: #fafafa;
+    border-bottom: 1px solid #ddd;
+}
+
+#output p {
+    color: #444;
+    background-color: #e9f7ef; 
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#actions p {
+    color: #666; 
+    font-style: italic;
+    margin: 10px 0;
+    padding: 10px 15px;
+    background-color: #fff7e6;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    padding: 12px 20px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    background: #f9f9f9; 
+    border-radius: 6px;
+    font-size: 16px;
+    width: calc(100% - 24px);
+}
+
+input:focus {
+    outline: none;
+    border-color: #575ed8;
+    box-shadow: 0 0 5px rgba(87, 94, 216, 0.5);
+}
+
+button {
+    background: #575ed8;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    padding: 12px;
+    margin-top: 10px;
+    width: calc(100% - 24px);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background: #4048c8;
+}
+
+button:active {
+    background: #2f36a8;
+}
+
+.notification {
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.notification {
+    background-color: #f0ad4e;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 1000;
+    font-size: 16px;
+}
+
+
+
+.notification.disconnect {
+    background-color: #ff1100;
+    color: white;
+}
+
+
+
